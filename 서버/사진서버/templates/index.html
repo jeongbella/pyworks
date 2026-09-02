@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 한글 인코딩 -->
+    <meta charset="utf-8">
+    <title>사진 서버 메인</title>
+</head>
+<body>
+    <h2>어느 여름날 카페에서...</h2>
+    <div>
+        <img src="{{ url_for('static', filename='cafe.jpg') }}" 
+            alt="카페 사진" width="500">
+    </div>
+</body>
+</html>

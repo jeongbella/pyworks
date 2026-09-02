@@ -1,0 +1,26 @@
+# 날짜와 시간 모듈
+# from 모듈이름 import 모듈
+from datetime import datetime # from 상위모듈, import 하위모듈
+
+# 현재 날짜와 시간
+now = datetime.now() # import의 datetime
+print(now)  # 2026-08-10 21:44:30.626566
+
+# 연 월 일
+print(f'{now.year}년 {now.month}월 {now.day}일') # 2026년 8월 10일
+
+# 시 분 초
+print(f'{now.hour} : {now.minute} : {now.second}')  # 21 : 47 : 16
+
+
+from datetime import date
+today = date.today()
+print(today) # 2026-08-10
+
+# 광복절
+the_day = date(2026,8,15)
+print(the_day) # 2026-08-1
+
+# D - day
+date_diff = the_day - today
+print("D-day :", date_diff.days)
